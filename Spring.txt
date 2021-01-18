@@ -1,0 +1,10 @@
+1、@Autowired
+@Autowired顾名思义，就是自动装配，其作用是为了消除代码Java代码里面的getter/setter与bean属性中的property。当然，getter看个人需求，如果私有属性需要对外提供的话，应当予以保留。
+
+@Autowired默认按类型匹配的方式，在容器查找匹配的Bean，当有且仅有一个匹配的Bean时，Spring将其注入@Autowired标注的变量中。
+
+2、Qualifier（指定注入Bean的名称）
+
+如果容器中有一个以上匹配的Bean，则可以通过@Qualifier注解限定Bean的名称
+
+我是张明辉
